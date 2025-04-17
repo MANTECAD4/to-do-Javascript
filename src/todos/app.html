@@ -1,0 +1,46 @@
+<section class="todoapp">
+    <header class="header">
+        <h1>To-dos</h1>
+        <input id="new-todo-input" class="new-todo" placeholder="What needs to be done?" autofocus>
+    </header>
+    
+    <!-- This section should be hidden by default and shown when there are todos -->
+    <section class="main">
+        <input id="toggle-all" class="toggle-all" type="checkbox">
+        <label for="toggle-all">Mark all as complete</label>
+        <ul class="todo-list">
+            
+        </ul>
+    </section>
+
+    <!-- This footer should hidden by default and shown when there are todos -->
+    <footer class="footer">
+        <!-- This should be "0 items left" by default -->
+        <span class="todo-count"><strong id="pending-count">0</strong> pending</span>
+        <!-- Remove this if you don't implement routing -->
+        <ul class="filters">
+            <li>
+                <a id="all-filter" class="selected filtro" class="selected" href="#/">All</a>
+            </li>
+            <li>
+                <a id="pending-filter" class="filtro" href="#/active">Pending</a>
+            </li>
+            <li>
+                <a id="completed-filter" class="filtro" href="#/completed">Completed</a>
+            </li>
+            <li>
+                
+            </li>
+        </ul>
+        <!-- Hidden if no completed items are left ↓ -->
+        <button class="clear-completed">Delete completed</button>
+    </footer>
+</section>
+
+
+<footer class="info">
+    <p>Template created by <a href="http://sindresorhus.com">Sindre Sorhus</a></p>
+    <!-- Change this out with your name and url ↓ -->
+    <p>Developed by <a href="http://todomvc.com">Me</a></p>
+    <p>Shared by <a href="http://todomvc.com">TodoMVC</a></p>
+</footer>
