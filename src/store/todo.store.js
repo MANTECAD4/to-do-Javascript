@@ -9,7 +9,7 @@ export const Filters = {
 }
 
 const state = {
-    todos: [,],
+    todos: [],
     filter : Filters.all,
 }
 
